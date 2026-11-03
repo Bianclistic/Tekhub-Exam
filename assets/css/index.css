@@ -96,6 +96,15 @@
   justify-content: center;
   gap: 15px;
 }
+.gym {
+  display: flex;
+}
+.gym img {
+  width: 1%;
+}
+.pro h3 {
+  color: aliceblue;
+}
 @media screen and (max-width: 600px) {
   .burger {
     display: flex;

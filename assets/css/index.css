@@ -104,6 +104,26 @@
 }
 .pro h3 {
   color: aliceblue;
+  border: 2px solid orangered;
+  background-color: orangered;
+  margin-top: 10px;
+  width: 15%;
+  height: 10%;
+  text-align: center;
+  border-radius: 5px;
+}
+.pro h1 {
+  color: navy;
+}
+.pro h1 span {
+  color: navy;
+  font-size: 16px;
+}
+.starter {
+}
+.pro {
+  padding: 30px;
+  border: 2px solid aliceblue;
 }
 @media screen and (max-width: 600px) {
   .burger {

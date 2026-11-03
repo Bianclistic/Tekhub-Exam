@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  color: navy;
+  font-size: 20px;
+}
+
+.image img {
+  width: 80px;
+}
+.btn {
+  width: 10%;
+  color: aliceblue;
+  background-color: orangered;
+  border-radius: 30px;
+  border: none;
+}
+.burger {
+  display: none;
+}
+.pick {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: orangered;
+  gap: 10px;
+}
+.pick h1 {
+  color: aliceblue;
+  font-size: 60px;
+}
+.pick p {
+  color: aliceblue;
+}
+.pick img {
+  width: 300px;
+}
+.btn2 {
+  background-color: navy;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+.btn3 {
+  background-color: orangered;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.pace {
+  text-align: center;
+  color: navy;
+}
+.btn4 {
+  width: 10%;
+  height: 8%;
+  color: navy;
+  border-radius: 10px;
+  border: none;
+}
+.btn5 {
+  width: 10%;
+  height: 8%;
+  color: navy;
+  background-color: orangered;
+  border: none;
+  border-radius: 10px;
+}
+.year {
+  width: 6%;
+  height: 8%;
+  color: aliceblue;
+  border-radius: 10px;
+  background-color: navy;
+  border: none;
+}
+.button {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  .burger {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar.show {
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    position: absolute;
+    top: 10px;
+    border-radius: 15px;
+    right: 0px;
+    padding: 20px;
+    gap: 20px;
+    z-index: 1000;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .navbar a:hover {
+    background-color: aqua;
+    color: crimson;
+  }
+  .burger img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    z-index: 1001;
+  }
+
+  .btn {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+  .pick {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    background-color: orangered;
+  }
+}
